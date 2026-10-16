@@ -1,0 +1,13 @@
+[package]
+name = "mission-description-prototype"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+ammonia = "4.2.3"
+htmd = "0.5.6"
+pulldown-cmark = { version = "0.13.4", default-features = false, features = ["html"] }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+topcoat = "0.10.0"
